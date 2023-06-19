@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fomulario de logueo</title>
+    <link rel="stylesheet" href="/FormularioPHP/css/Estilos.css">
+  </head>
+  <body>
+    <center>
+        <h1>Login</h1>
+    <table>
+    <form action="php/Respuesta.php" method="post" autocomplete="off">
+        <tr>
+            <td>
+                <label for="nombre">Nombre completo:</label>
+                   <input 
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="Nombre"
+                    pattern="[a-zA-Z ]+" 
+                    minlength="10" 
+                    required
+                    />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="usuario">Usuario:</label>
+                    <input 
+                    type="text" 
+                    name="usuario" 
+                    id="usuario" 
+                    placeholder="Usuario"
+                    pattern="[a-zA-Z0-9]+" 
+                    minlength="8" 
+                    required
+                    />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Password:</label>
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    placeholder="Password"
+                    required
+                    />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password2">Confirmar password:</label>
+                    <input 
+                    type="password" 
+                    name="password2" 
+                    id="password2" 
+                    placeholder="Password"
+                    />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="correo">Correo:</label>
+                    <input 
+                    type="text"
+                    name="correo"
+                    id="correo"
+                    placeholder="Correo"
+                    pattern="(?=.*[@])(?=.*[\.])[a-zA-Z0-9_@\.]+" 
+                    required
+                    />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="telefono">Telefono:</label>
+                    <input 
+                    type="text"
+                    name="telefono"
+                    id="telefono"
+                    placeholder="Telefono"
+                    pattern="[0-9]{10}" 
+                    minlength="10" 
+                    maxlength="10" 
+                    required
+                    />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="genero">Genero:</label>
+                <input type="text"
+                name="genero"
+                id="genero"
+                placeholder="Genero"
+                required
+                >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="fechan">Fecha de nacimiento:</label>
+                    <input type="text"
+                    name="fechan"
+                    id="fechan"
+                    placeholder="00/00/0000"
+                    required
+                    >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Login..." />
+            </td>
+        </tr>
+    </table>
+    </form>  
+    </center>
+  </body>
+</html>
